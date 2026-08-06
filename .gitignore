@@ -30,6 +30,7 @@ yarn-error.log*
 
 # zerops & deployment
 .zerops
+.mcp.json
 
 # typescript
 *.tsbuildinfo
