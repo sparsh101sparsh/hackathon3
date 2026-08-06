@@ -1,0 +1,452 @@
+{
+  "23519cc3-cb93-4a55-87cc-32d6b494125e": {
+    "problemId": "23519cc3-cb93-4a55-87cc-32d6b494125e",
+    "pattern": "dp",
+    "lessonPath": "/dp/maximal-square",
+    "hasVisualizer": true
+  },
+  "9a6a78cd-2f04-4769-8f1b-c0f4ff4efd1f": {
+    "problemId": "9a6a78cd-2f04-4769-8f1b-c0f4ff4efd1f",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/lru-cache",
+    "hasVisualizer": true
+  },
+  "eb3ff9eb-4845-4cdb-89bc-a9bad283eb4e": {
+    "problemId": "eb3ff9eb-4845-4cdb-89bc-a9bad283eb4e",
+    "pattern": "backtracking",
+    "lessonPath": "/backtracking/generate-parentheses",
+    "hasVisualizer": true
+  },
+  "74c8df16-ac27-4da8-9ca7-b5832f100c4b": {
+    "problemId": "74c8df16-ac27-4da8-9ca7-b5832f100c4b",
+    "pattern": "dfs",
+    "lessonPath": "/dfs/flood-fill",
+    "hasVisualizer": true
+  },
+  "e39e2389-4361-4488-926c-c0af40b334a9": {
+    "problemId": "e39e2389-4361-4488-926c-c0af40b334a9",
+    "pattern": "greedy",
+    "lessonPath": "/greedy/gas-station",
+    "hasVisualizer": true
+  },
+  "37689324-cef6-43df-b6a8-243af8cfb6a5": {
+    "problemId": "37689324-cef6-43df-b6a8-243af8cfb6a5",
+    "pattern": "bit-manipulation",
+    "lessonPath": "/bit-manipulation/single-number",
+    "hasVisualizer": true
+  },
+  "e15b5d9d-3491-4ff1-a87f-0ed3a8c8726a": {
+    "problemId": "e15b5d9d-3491-4ff1-a87f-0ed3a8c8726a",
+    "pattern": "bit-manipulation",
+    "lessonPath": "/bit-manipulation/reverse-bits",
+    "hasVisualizer": true
+  },
+  "ed5d96a9-2ec3-40c6-8ac2-f2b565619ea5": {
+    "problemId": "ed5d96a9-2ec3-40c6-8ac2-f2b565619ea5",
+    "pattern": "dfs",
+    "lessonPath": "/dfs/path-sum-ii",
+    "hasVisualizer": true
+  },
+  "7456e9aa-0ec4-4c4e-aae4-4563d853fe22": {
+    "problemId": "7456e9aa-0ec4-4c4e-aae4-4563d853fe22",
+    "pattern": "two-pointers",
+    "lessonPath": "/two-pointers/move-zeroes",
+    "hasVisualizer": true
+  },
+  "87716d19-460e-4d60-815c-91a1d6d62bf9": {
+    "problemId": "87716d19-460e-4d60-815c-91a1d6d62bf9",
+    "pattern": "bit-manipulation",
+    "lessonPath": "/bit-manipulation/missing-number",
+    "hasVisualizer": true
+  },
+  "58cfa85e-d869-4689-8604-9a7ef7c1032e": {
+    "problemId": "58cfa85e-d869-4689-8604-9a7ef7c1032e",
+    "pattern": "backtracking",
+    "lessonPath": "/backtracking/palindrome-partitioning",
+    "hasVisualizer": true
+  },
+  "1585cb19-2c20-4176-ba76-bbdf9e3ded75": {
+    "problemId": "1585cb19-2c20-4176-ba76-bbdf9e3ded75",
+    "pattern": "bit-manipulation",
+    "lessonPath": "/bit-manipulation/sum-of-two-integers",
+    "hasVisualizer": true
+  },
+  "49237128-72b6-42e7-be0b-22a1795dd310": {
+    "problemId": "49237128-72b6-42e7-be0b-22a1795dd310",
+    "pattern": "dfs",
+    "lessonPath": "/dfs/same-tree",
+    "hasVisualizer": true
+  },
+  "b34020a0-9538-4f0c-8730-9fbf6e490229": {
+    "problemId": "b34020a0-9538-4f0c-8730-9fbf6e490229",
+    "pattern": "backtracking",
+    "lessonPath": "/backtracking/n-queens",
+    "hasVisualizer": true
+  },
+  "f21ac100-25fe-4656-bf68-a0baf1646e59": {
+    "problemId": "f21ac100-25fe-4656-bf68-a0baf1646e59",
+    "pattern": "arrays-hashing",
+    "lessonPath": "/arrays-hashing/contains-duplicate",
+    "hasVisualizer": true
+  },
+  "db968fb0-7989-4aa4-8f8e-c1755283795a": {
+    "problemId": "db968fb0-7989-4aa4-8f8e-c1755283795a",
+    "pattern": "arrays-hashing",
+    "lessonPath": "/arrays-hashing/group-anagrams",
+    "hasVisualizer": true
+  },
+  "5b87cc76-f7f3-4320-9b5c-5714d638f590": {
+    "problemId": "5b87cc76-f7f3-4320-9b5c-5714d638f590",
+    "pattern": "binary-search",
+    "lessonPath": "/binary-search/split-array-largest-sum",
+    "hasVisualizer": true
+  },
+  "3c90c8e1-3402-4326-b545-889741ccd7e6": {
+    "problemId": "3c90c8e1-3402-4326-b545-889741ccd7e6",
+    "pattern": "greedy",
+    "lessonPath": "/greedy/jump-game",
+    "hasVisualizer": true
+  },
+  "8f7ba2d7-2700-46fc-8fd5-5862c58ae35a": {
+    "problemId": "8f7ba2d7-2700-46fc-8fd5-5862c58ae35a",
+    "pattern": "graphs",
+    "lessonPath": "/graphs/course-schedule",
+    "hasVisualizer": true
+  },
+  "0d4e3f81-b807-408a-bfd2-3fc6d2853609": {
+    "problemId": "0d4e3f81-b807-408a-bfd2-3fc6d2853609",
+    "pattern": "intervals",
+    "lessonPath": "/intervals/non-overlapping-intervals",
+    "hasVisualizer": true
+  },
+  "67d220cd-9ae9-42d5-85b9-e3d9527eaa12": {
+    "problemId": "67d220cd-9ae9-42d5-85b9-e3d9527eaa12",
+    "pattern": "arrays-hashing",
+    "lessonPath": "/arrays-hashing/valid-anagram",
+    "hasVisualizer": true
+  },
+  "7a6e46b5-a7d1-47db-8497-3cd7662ee45b": {
+    "problemId": "7a6e46b5-a7d1-47db-8497-3cd7662ee45b",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/swap-nodes-in-pairs",
+    "hasVisualizer": true
+  },
+  "0a874706-3aa6-4eaf-9e9d-734423ab6271": {
+    "problemId": "0a874706-3aa6-4eaf-9e9d-734423ab6271",
+    "pattern": "two-pointers",
+    "lessonPath": "/two-pointers/valid-palindrome",
+    "hasVisualizer": true
+  },
+  "22b2233d-f97e-4543-b0a6-ee836c857996": {
+    "problemId": "22b2233d-f97e-4543-b0a6-ee836c857996",
+    "pattern": "dp",
+    "lessonPath": "/dp/climbing-stairs",
+    "hasVisualizer": true
+  },
+  "bd0a9384-1a63-42a0-a831-3f119fd8b303": {
+    "problemId": "bd0a9384-1a63-42a0-a831-3f119fd8b303",
+    "pattern": "dp",
+    "lessonPath": "/dp/edit-distance",
+    "hasVisualizer": true
+  },
+  "9142c39b-81cb-4157-a972-20550d40262b": {
+    "problemId": "9142c39b-81cb-4157-a972-20550d40262b",
+    "pattern": "graphs",
+    "lessonPath": "/graphs/course-schedule-ii",
+    "hasVisualizer": true
+  },
+  "045e8471-9a67-495d-b3b6-5f5c4440955d": {
+    "problemId": "045e8471-9a67-495d-b3b6-5f5c4440955d",
+    "pattern": "graphs",
+    "lessonPath": "/graphs/word-ladder",
+    "hasVisualizer": true
+  },
+  "4f48ebc0-68af-4e8d-86e6-e52213139c02": {
+    "problemId": "4f48ebc0-68af-4e8d-86e6-e52213139c02",
+    "pattern": "dfs",
+    "lessonPath": "/dfs/number-of-islands",
+    "hasVisualizer": true
+  },
+  "9612b3aa-93f0-4cc1-9176-0d8d8f80fbda": {
+    "problemId": "9612b3aa-93f0-4cc1-9176-0d8d8f80fbda",
+    "pattern": "dp",
+    "lessonPath": "/dp/coin-change",
+    "hasVisualizer": true
+  },
+  "4ce8f87a-e114-44ac-8511-ff6d2b22fc9f": {
+    "problemId": "4ce8f87a-e114-44ac-8511-ff6d2b22fc9f",
+    "pattern": "stack",
+    "lessonPath": "/stack/longest-valid-parentheses",
+    "hasVisualizer": true
+  },
+  "b8177c59-02b0-4696-9a0f-e6c1fbbc4c47": {
+    "problemId": "b8177c59-02b0-4696-9a0f-e6c1fbbc4c47",
+    "pattern": "dp",
+    "lessonPath": "/dp/decode-ways",
+    "hasVisualizer": true
+  },
+  "f5db48c9-649c-4e36-945d-e95ce9c2c871": {
+    "problemId": "f5db48c9-649c-4e36-945d-e95ce9c2c871",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/reorder-list",
+    "hasVisualizer": true
+  },
+  "fdc8a657-ff0d-480b-a644-87510b5cd717": {
+    "problemId": "fdc8a657-ff0d-480b-a644-87510b5cd717",
+    "pattern": "heap",
+    "lessonPath": "/heap/find-k-closest-elements",
+    "hasVisualizer": true
+  },
+  "3878d327-9a92-4972-af65-901741b31d4f": {
+    "problemId": "3878d327-9a92-4972-af65-901741b31d4f",
+    "pattern": "heap",
+    "lessonPath": "/heap/merge-k-sorted-lists",
+    "hasVisualizer": true
+  },
+  "43b93470-bfd4-4c03-ae8d-26c3874585a0": {
+    "problemId": "43b93470-bfd4-4c03-ae8d-26c3874585a0",
+    "pattern": "stack",
+    "lessonPath": "/stack/daily-temperatures",
+    "hasVisualizer": true
+  },
+  "fa4fbd10-4582-4a18-a0c5-3fa4fbd612b4": {
+    "problemId": "fa4fbd10-4582-4a18-a0c5-3fa4fbd612b4",
+    "pattern": "two-pointers",
+    "lessonPath": "/two-pointers/valid-triangle-number",
+    "hasVisualizer": true
+  },
+  "453cabec-1626-4a52-9ce4-b570351724f7": {
+    "problemId": "453cabec-1626-4a52-9ce4-b570351724f7",
+    "pattern": "prefix-sum",
+    "lessonPath": "/prefix-sum/subarray-sum-equals-k",
+    "hasVisualizer": true
+  },
+  "2039d892-505a-48bd-9bc8-ec638df0fa85": {
+    "problemId": "2039d892-505a-48bd-9bc8-ec638df0fa85",
+    "pattern": "dfs",
+    "lessonPath": "/dfs/surrounded-regions",
+    "hasVisualizer": true
+  },
+  "0731af54-4bdc-41ce-901c-2235e38cd440": {
+    "problemId": "0731af54-4bdc-41ce-901c-2235e38cd440",
+    "pattern": "backtracking",
+    "lessonPath": "/backtracking/combination-sum",
+    "hasVisualizer": true
+  },
+  "480737ca-f972-4d09-9da2-b3fc00967b18": {
+    "problemId": "480737ca-f972-4d09-9da2-b3fc00967b18",
+    "pattern": "greedy",
+    "lessonPath": "/greedy/jump-game-ii",
+    "hasVisualizer": true
+  },
+  "29311302-66c2-44b7-a016-821c1e684c2f": {
+    "problemId": "29311302-66c2-44b7-a016-821c1e684c2f",
+    "pattern": "stack",
+    "lessonPath": "/stack/min-stack",
+    "hasVisualizer": true
+  },
+  "20b23559-f7ce-4b04-ba40-328ec36f0638": {
+    "problemId": "20b23559-f7ce-4b04-ba40-328ec36f0638",
+    "pattern": "backtracking",
+    "lessonPath": "/backtracking/subsets",
+    "hasVisualizer": true
+  },
+  "fec05a7e-eede-40be-9a2a-37db31ab2699": {
+    "problemId": "fec05a7e-eede-40be-9a2a-37db31ab2699",
+    "pattern": "two-pointers",
+    "lessonPath": "/two-pointers/container-with-most-water",
+    "hasVisualizer": true
+  },
+  "29377a0f-1084-49b1-96e4-00b120944ad3": {
+    "problemId": "29377a0f-1084-49b1-96e4-00b120944ad3",
+    "pattern": "bit-manipulation",
+    "lessonPath": "/bit-manipulation/number-of-1-bits",
+    "hasVisualizer": true
+  },
+  "c2faef52-d02f-4aca-ba05-563bb23da27c": {
+    "problemId": "c2faef52-d02f-4aca-ba05-563bb23da27c",
+    "pattern": "matrices",
+    "lessonPath": "/matrices/rotate-image",
+    "hasVisualizer": true
+  },
+  "ed2c6d14-0950-4377-a9f5-090c5ba12992": {
+    "problemId": "ed2c6d14-0950-4377-a9f5-090c5ba12992",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/add-two-numbers",
+    "hasVisualizer": true
+  },
+  "f3143760-4e29-4614-b05b-62505eafa292": {
+    "problemId": "f3143760-4e29-4614-b05b-62505eafa292",
+    "pattern": "intervals",
+    "lessonPath": "/intervals/merge-intervals",
+    "hasVisualizer": true
+  },
+  "bda3abad-a2ed-4dc4-9b42-b3538c85081d": {
+    "problemId": "bda3abad-a2ed-4dc4-9b42-b3538c85081d",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/merge-two-sorted-lists",
+    "hasVisualizer": true
+  },
+  "e96d24fa-b0f5-40a9-8d2b-8116c9692487": {
+    "problemId": "e96d24fa-b0f5-40a9-8d2b-8116c9692487",
+    "pattern": "two-pointers",
+    "lessonPath": "/two-pointers/trapping-rain-water",
+    "hasVisualizer": true
+  },
+  "39a51fdb-7228-4cd0-8a18-faa9656ec695": {
+    "problemId": "39a51fdb-7228-4cd0-8a18-faa9656ec695",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/linked-list-cycle",
+    "hasVisualizer": true
+  },
+  "6ea90ad3-4b53-4c82-8222-28d7ccbdc02b": {
+    "problemId": "6ea90ad3-4b53-4c82-8222-28d7ccbdc02b",
+    "pattern": "graphs",
+    "lessonPath": "/graphs/redundant-connection",
+    "hasVisualizer": true
+  },
+  "243de1d2-e781-4de7-80f0-47b83da722f0": {
+    "problemId": "243de1d2-e781-4de7-80f0-47b83da722f0",
+    "pattern": "arrays-hashing",
+    "lessonPath": "/arrays-hashing/two-sum",
+    "hasVisualizer": true
+  },
+  "8760fa49-8c75-4df2-aa83-4673b5ed7ea7": {
+    "problemId": "8760fa49-8c75-4df2-aa83-4673b5ed7ea7",
+    "pattern": "sliding-window",
+    "lessonPath": "/sliding-window/permutation-in-string",
+    "hasVisualizer": true
+  },
+  "20d3c1ad-f44e-49f2-b27e-b5c4e5bbd95a": {
+    "problemId": "20d3c1ad-f44e-49f2-b27e-b5c4e5bbd95a",
+    "pattern": "backtracking",
+    "lessonPath": "/backtracking/word-search",
+    "hasVisualizer": true
+  },
+  "035169fb-b2e7-47d3-ab91-396f99ac3a64": {
+    "problemId": "035169fb-b2e7-47d3-ab91-396f99ac3a64",
+    "pattern": "matrices",
+    "lessonPath": "/matrices/set-matrix-zeroes",
+    "hasVisualizer": true
+  },
+  "883d5bb9-c3ac-493d-90e3-1cd59f295adb": {
+    "problemId": "883d5bb9-c3ac-493d-90e3-1cd59f295adb",
+    "pattern": "stack",
+    "lessonPath": "/stack/valid-parentheses",
+    "hasVisualizer": true
+  },
+  "02d1bd0c-1cb3-4e9b-bd6f-428d0a801379": {
+    "problemId": "02d1bd0c-1cb3-4e9b-bd6f-428d0a801379",
+    "pattern": "sliding-window",
+    "lessonPath": "/sliding-window/sliding-window-maximum",
+    "hasVisualizer": true
+  },
+  "fbf989fa-5b93-4195-aa29-6e7d18ef4452": {
+    "problemId": "fbf989fa-5b93-4195-aa29-6e7d18ef4452",
+    "pattern": "dfs",
+    "lessonPath": "/dfs/longest-univalue-path",
+    "hasVisualizer": true
+  },
+  "188ce89b-4453-472b-82d0-b1d7412aedcf": {
+    "problemId": "188ce89b-4453-472b-82d0-b1d7412aedcf",
+    "pattern": "dp",
+    "lessonPath": "/dp/counting-bits",
+    "hasVisualizer": true
+  },
+  "bc081d47-0b92-4de2-a1dd-6ce2e51c7ffb": {
+    "problemId": "bc081d47-0b92-4de2-a1dd-6ce2e51c7ffb",
+    "pattern": "matrices",
+    "lessonPath": "/matrices/spiral-matrix",
+    "hasVisualizer": true
+  },
+  "ed2dd3bb-45b5-42a7-8dfc-1073335ebded": {
+    "problemId": "ed2dd3bb-45b5-42a7-8dfc-1073335ebded",
+    "pattern": "dfs",
+    "lessonPath": "/dfs/path-sum",
+    "hasVisualizer": true
+  },
+  "c3a67a01-6008-4b7e-9c61-ec894000431f": {
+    "problemId": "c3a67a01-6008-4b7e-9c61-ec894000431f",
+    "pattern": "bfs",
+    "lessonPath": "/bfs/01-matrix",
+    "hasVisualizer": true
+  },
+  "ce03fa48-b401-4f89-8618-c2a51ab23606": {
+    "problemId": "ce03fa48-b401-4f89-8618-c2a51ab23606",
+    "pattern": "dp",
+    "lessonPath": "/dp/house-robber",
+    "hasVisualizer": true
+  },
+  "c7b8a0e1-8cb3-4804-8cfc-c7bd5571d9d3": {
+    "problemId": "c7b8a0e1-8cb3-4804-8cfc-c7bd5571d9d3",
+    "pattern": "intervals",
+    "lessonPath": "/intervals/insert-interval",
+    "hasVisualizer": true
+  },
+  "ca115211-6d31-4df2-89ee-848410ae85d7": {
+    "problemId": "ca115211-6d31-4df2-89ee-848410ae85d7",
+    "pattern": "graphs",
+    "lessonPath": "/graphs/network-delay-time",
+    "hasVisualizer": true
+  },
+  "60886a50-320d-4a69-a51a-112bd185db23": {
+    "problemId": "60886a50-320d-4a69-a51a-112bd185db23",
+    "pattern": "two-pointers",
+    "lessonPath": "/two-pointers/sort-colors",
+    "hasVisualizer": true
+  },
+  "b94c0f0c-2c36-4e65-afb6-50a567f18928": {
+    "problemId": "b94c0f0c-2c36-4e65-afb6-50a567f18928",
+    "pattern": "heap",
+    "lessonPath": "/heap/task-scheduler",
+    "hasVisualizer": true
+  },
+  "940a0462-1785-494e-9a7c-6966d2dc8325": {
+    "problemId": "940a0462-1785-494e-9a7c-6966d2dc8325",
+    "pattern": "dp",
+    "lessonPath": "/dp/unique-paths",
+    "hasVisualizer": true
+  },
+  "8056bb83-0746-4128-8149-50f3f27b7053": {
+    "problemId": "8056bb83-0746-4128-8149-50f3f27b7053",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/reverse-linked-list",
+    "hasVisualizer": true
+  },
+  "a5c8a5ff-f064-4872-b02e-3ac5a466bd93": {
+    "problemId": "a5c8a5ff-f064-4872-b02e-3ac5a466bd93",
+    "pattern": "backtracking",
+    "lessonPath": "/backtracking/permutations",
+    "hasVisualizer": true
+  },
+  "7cb5f599-0276-4835-b906-18a62fbc923c": {
+    "problemId": "7cb5f599-0276-4835-b906-18a62fbc923c",
+    "pattern": "binary-search",
+    "lessonPath": "/binary-search/binary-search",
+    "hasVisualizer": true
+  },
+  "5ab87d7e-5e42-4b05-b4c4-644f22ffa858": {
+    "problemId": "5ab87d7e-5e42-4b05-b4c4-644f22ffa858",
+    "pattern": "dp",
+    "lessonPath": "/dp/longest-increasing-subsequence",
+    "hasVisualizer": true
+  },
+  "4936e174-ddf3-490d-a4e4-6898e0d4d160": {
+    "problemId": "4936e174-ddf3-490d-a4e4-6898e0d4d160",
+    "pattern": "stack",
+    "lessonPath": "/stack/decode-string",
+    "hasVisualizer": true
+  },
+  "eb655693-59b7-46bd-9eb8-ab5e5e19d6d6": {
+    "problemId": "eb655693-59b7-46bd-9eb8-ab5e5e19d6d6",
+    "pattern": "linked-list",
+    "lessonPath": "/linked-list/palindrome-linked-list",
+    "hasVisualizer": true
+  },
+  "00388704-08a5-4056-8d4f-891604d3c5fd": {
+    "problemId": "00388704-08a5-4056-8d4f-891604d3c5fd",
+    "pattern": "dp",
+    "lessonPath": "/dp/word-break",
+    "hasVisualizer": true
+  }
+}

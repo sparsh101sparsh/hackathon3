@@ -1,0 +1,242 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  googleId     String?  @unique
+  name         String
+  passwordHash String
+  role         String   @default("USER") // USER, ADMIN
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Problem {
+  id              String           @id @default(uuid())
+  slug            String           @unique
+  title           String
+  statement       String
+  inputFormat     String
+  outputFormat    String
+  constraints     String
+  difficulty      String // EASY, MEDIUM, HARD
+  topicTags       String // JSON string array e.g. "[\"Arrays\", \"Hash Table\"]"
+  companyTags     String // JSON string array e.g. "[\"Google\", \"Amazon\"]"
+  editorial       String
+  timeLimit       Float            @default(1.0)
+  memoryLimit     Int              @default(256)
+  createdAt       DateTime         @default(now())
+  codeTemplates   CodeTemplate[]
+  testCases       TestCase[]
+  submissions     Submission[]
+  contestProblems ContestProblem[]
+  companyProblems CompanyProblem[]
+  revisionCards   RevisionCard[]
+
+  @@index([difficulty, createdAt])
+}
+
+model CodeTemplate {
+  id        String  @id @default(uuid())
+  problemId String
+  problem   Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  language  String // python, cpp, javascript, java, go
+  code      String
+}
+
+model TestCase {
+  id             String  @id @default(uuid())
+  problemId      String
+  problem        Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  input          String
+  expectedOutput String
+  isSample       Boolean @default(false)
+  explanation    String?
+}
+
+model Submission {
+  id             String   @id @default(uuid())
+  userId         String?  @default("guest")
+  problemId      String
+  problem        Problem  @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  code           String
+  language       String
+  status         String // Accepted, Wrong Answer, Time Limit Exceeded, Memory Limit Exceeded, Runtime Error, Compilation Error
+  executionTime  Float?
+  memory         Float?
+  failedTestCase String?
+  createdAt      DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([userId, status, problemId])
+  @@index([problemId, status])
+}
+
+model Contest {
+  id                  String               @id @default(uuid())
+  title               String
+  description         String
+  startTime           DateTime
+  endTime             DateTime
+  isRated             Boolean              @default(true)
+  status              String               @default("UPCOMING") // UPCOMING, ACTIVE, ENDED
+  createdAt           DateTime             @default(now())
+  contestProblems     ContestProblem[]
+  contestParticipants ContestParticipant[]
+  userRatings         UserRating[]
+}
+
+model ContestProblem {
+  id        String  @id @default(uuid())
+  contestId String
+  contest   Contest @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  problemId String
+  problem   Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  points    Int     @default(100)
+  order     Int     @default(1)
+
+  @@index([contestId, order])
+  @@index([problemId])
+}
+
+model ContestParticipant {
+  id         String    @id @default(uuid())
+  contestId  String
+  contest    Contest   @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  userId     String?   @default("guest")
+  name       String    @default("Guest Coder")
+  score      Int       @default(0)
+  finishTime DateTime?
+  oldRating  Int       @default(0)
+  newRating  Int       @default(0)
+
+  @@unique([contestId, userId])
+  @@index([contestId, score])
+  @@index([userId, contestId])
+}
+
+model UserRating {
+  id        String   @id @default(uuid())
+  userId    String?  @default("guest")
+  contestId String
+  contest   Contest  @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  rating    Int
+  delta     Int
+  timestamp DateTime @default(now())
+
+  @@index([userId, timestamp])
+}
+
+model UserProgress {
+  id             String    @id @default(uuid())
+  userId         String?   @unique @default("guest")
+  solvedEasy     Int       @default(0)
+  solvedMedium   Int       @default(0)
+  solvedHard     Int       @default(0)
+  streak         Int       @default(0)
+  lastActiveDate DateTime?
+}
+
+model Company {
+  id              String           @id @default(uuid())
+  name            String           @unique
+  logo            String?
+  description     String?
+  problemCount    Int              @default(0)
+  companyProblems CompanyProblem[]
+}
+
+model CompanyProblem {
+  id        String  @id @default(uuid())
+  companyId String
+  company   Company @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  problemId String
+  problem   Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  frequency Int     @default(1)
+
+  @@index([companyId, frequency])
+  @@index([problemId])
+}
+
+model CustomRoom {
+  id              String            @id @default(uuid())
+  code            String            @unique
+  name            String
+  hostName        String
+  maxPlayers      Int               @default(10)
+  difficulty      String            @default("MIXED") // EASY, MEDIUM, HARD, MIXED
+  problemCount    Int               @default(3)
+  status          String            @default("WAITING") // WAITING, IN_PROGRESS, FINISHED
+  problemIds      String // JSON string array of problem IDs
+  mode            String            @default("DUEL") // DUEL or SQUAD
+  durationSeconds Int               @default(900)
+  startedAt       DateTime?
+  endedAt         DateTime?
+  winnerId        String?
+  createdAt       DateTime          @default(now())
+  participants    RoomParticipant[]
+}
+
+model RoomParticipant {
+  id         String     @id @default(uuid())
+  roomId     String
+  room       CustomRoom @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  userId     String
+  userName   String
+  score      Int        @default(0)
+  solved     Int        @default(0)
+  progress   String     @default("WAITING") // WAITING, CODING, SUBMITTED, SOLVED
+  acceptedAt DateTime?
+  joinedAt   DateTime   @default(now())
+
+  @@unique([roomId, userId])
+}
+
+model RevisionCard {
+  id                 String    @id @default(uuid())
+  userId             String    @default("guest")
+  problemId          String
+  problem            Problem   @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  pattern            String    @default("General DSA")
+  keyTakeaway        String    @default("Review key logic and optimal time complexity.")
+  timeComplexity     String    @default("O(N)")
+  spaceComplexity    String    @default("O(1)")
+  interval           Int       @default(1)
+  easeFactor         Float     @default(2.5)
+  repetitions        Int       @default(0)
+  dueDate            DateTime  @default(now())
+  lastReviewedAt     DateTime?
+  failureCount       Int       @default(0)
+  lastFailureType    String?
+  lastError          String?
+  lastFailedInput    String?
+  lastExpectedOutput String?
+  lastActualOutput   String?
+  learnedAt          DateTime?
+  createdAt          DateTime  @default(now())
+
+  @@unique([userId, problemId])
+  @@index([userId, dueDate])
+}
+
+model EmailVerification {
+  id           String   @id @default(uuid())
+  email        String
+  code         String // HMAC digest of the 6-digit verification OTP
+  purpose      String // "SIGNUP", "LOGIN", or "RESET_PASSWORD"
+  name         String? // Saved for signup completion
+  passwordHash String? // Saved for signup completion
+  expiresAt    DateTime
+  createdAt    DateTime @default(now())
+
+  @@index([email, purpose, createdAt])
+  @@index([email, purpose, expiresAt])
+  @@index([expiresAt])
+}

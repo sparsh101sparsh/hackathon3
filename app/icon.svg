@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>CodeForge</title>
+  <rect width="64" height="64" rx="14" fill="#08080a"/>
+  <path d="m18 22 10 10-10 10" fill="none" stroke="#fbbf24" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <path d="M34 44h12" fill="none" stroke="#f59e0b" stroke-linecap="round" stroke-width="6"/>
+</svg>
