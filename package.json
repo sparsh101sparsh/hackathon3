@@ -27,6 +27,7 @@
     "test:execution-failover": "tsx scripts/test-execution-failover.ts",
     "test:function-style-execution": "tsx scripts/test-function-style-execution.ts",
     "test:code-execution-complete": "tsx scripts/test-code-execution-complete.ts",
+    "test:sandbox-invariants": "tsx scripts/test-sandbox-invariants.ts",
     "test:tutor-fallback": "tsx scripts/test-tutor-fallback.ts",
     "test:rate-limits": "tsx scripts/test-rate-limits.ts",
     "test:health": "tsx scripts/test-health.ts",
