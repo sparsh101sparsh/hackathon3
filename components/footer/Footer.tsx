@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
             <div className="p-1.5 rounded-lg bg-amber-400 text-[#08080a] shadow-md shadow-amber-400/10">
               <Code2 className="w-5 h-5 fill-slate-950" />
             </div>
-            <span>CodeForge</span>
+            <span>CodeRev</span>
           </Link>
 
           <p className="text-slate-400 leading-relaxed max-w-sm">
@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
           <h4 className="text-white font-bold text-sm tracking-tight">Community</h4>
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/sparsh101sparsh/hackathon3"
+              href="https://github.com/sparsh101sparsh/CodeRev"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -111,7 +111,7 @@ export const Footer: React.FC = () => {
             </a>
           </div>
           <p className="text-[11px] text-slate-500 pt-2">
-            CodeForge is built for candidate engineers and technical interview preparation.
+            CodeRev is built for candidate engineers and technical interview preparation.
           </p>
         </div>
       </div>
@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
         <div>
-          © {new Date().getFullYear()} CodeForge. All rights reserved.
+          © {new Date().getFullYear()} CodeRev. All rights reserved.
         </div>
         <div className="flex items-center gap-4">
           <span>Privacy Policy</span>

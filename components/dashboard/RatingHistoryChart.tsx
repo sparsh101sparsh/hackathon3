@@ -37,7 +37,7 @@ export function RatingHistoryChart({ history, currentRating }: RatingHistoryChar
             <TrendingUp className="w-4 h-4 text-amber-400" aria-hidden="true" /> Rating Progression History
           </h3>
           <p className="text-xs text-slate-400">
-            Performance over time in CodeForge Rated Contests
+            Performance over time in CodeRev Rated Contests
           </p>
         </div>
         <div className="text-right">

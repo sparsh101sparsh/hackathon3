@@ -48,7 +48,7 @@ const FAQS: FaqItem[] = [
   {
     question: 'Is this a personal/open-source project?',
     answer:
-      'Yes — CodeForge is an independent personal project, not a commercial product. The source code is on GitHub. Feel free to explore, fork, and contribute.',
+      'Yes — CodeRev is an independent personal project, not a commercial product. The source code is on GitHub. Feel free to explore, fork, and contribute.',
   },
 ];
 

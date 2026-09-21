@@ -40,7 +40,7 @@ function buildFallbackReport(userName: string, accuracy: number, streak: number)
       streak === 0
         ? 'Solve 1 problem today to start your active streak!'
         : 'Solve 3 Medium Dynamic Programming problems (e.g. Coin Change, Longest Common Subsequence)',
-      'Participate in the upcoming CodeForge Rated Contest to test time management',
+      'Participate in the upcoming CodeRev Rated Contest to test time management',
       'Review space complexity trade-offs in Graph Traversal algorithms',
     ],
     estimatedRatingGain: 45,
@@ -106,7 +106,7 @@ export async function GET(req: NextRequest) {
       ? Math.round((acceptedSubmissions / totalSubmissions) * 100)
       : 0;
 
-    const systemInstruction = `You are a CodeForge Performance Coach analyzing weekly coding progress.
+    const systemInstruction = `You are a CodeRev Performance Coach analyzing weekly coding progress.
 Provide concise, highly motivating weekly progress insights for competitive programming and interview prep.
 CRITICAL STREAK RULE: If Active Streak is 0 days, do NOT claim the user has a strong streak or consistent daily practice. Instead, encourage them to solve 1 problem today to kickstart their streak!
 

@@ -12,8 +12,8 @@ export interface SendVerificationEmailResult {
   devCode?: string;
 }
 
-const RESEND_DEFAULT_FROM = 'CodeForge <onboarding@resend.dev>';
-const RESEND_FROM_PLACEHOLDER = 'CodeForge <auth@yourdomain.com>';
+const RESEND_DEFAULT_FROM = 'CodeRev <onboarding@resend.dev>';
+const RESEND_FROM_PLACEHOLDER = 'CodeRev <auth@yourdomain.com>';
 
 export function hasConfiguredEmailSender(): boolean {
   const fromAddress = process.env.RESEND_FROM_EMAIL || RESEND_DEFAULT_FROM;
@@ -55,24 +55,24 @@ export async function sendVerificationEmail(
   const isProduction = process.env.NODE_ENV === 'production';
   const hasConfiguredSender = hasConfiguredEmailSender();
 
-  let subject = `${code} is your CodeForge Verification Code`;
+  let subject = `${code} is your CodeRev Verification Code`;
   let purposeDescription = 'verification';
 
   if (purpose === 'SIGNUP') {
-    subject = `${code} is your CodeForge Sign-Up Verification Code`;
+    subject = `${code} is your CodeRev Sign-Up Verification Code`;
     purposeDescription = 'account creation';
   } else if (purpose === 'LOGIN') {
-    subject = `${code} is your CodeForge Sign-In Verification Code`;
+    subject = `${code} is your CodeRev Sign-In Verification Code`;
     purposeDescription = 'sign-in';
   } else if (purpose === 'RESET_PASSWORD') {
-    subject = `${code} is your CodeForge Password Reset Code`;
+    subject = `${code} is your CodeRev Password Reset Code`;
     purposeDescription = 'password reset';
   }
 
   const htmlContent = `
     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 540px; margin: 0 auto; background-color: #020817; color: #f8fafc; padding: 32px; border-radius: 16px; border: 1px solid #1e293b;">
       <div style="text-align: center; margin-bottom: 24px;">
-        <h1 style="font-size: 24px; font-weight: 800; color: #38bdf8; margin: 0;">CodeForge</h1>
+        <h1 style="font-size: 24px; font-weight: 800; color: #38bdf8; margin: 0;">CodeRev</h1>
         <p style="font-size: 13px; color: #94a3b8; margin-top: 4px;">Enterprise Competitive Programming & Interview Prep</p>
       </div>
 
@@ -81,7 +81,7 @@ export async function sendVerificationEmail(
           ${safeName ? `Hello <strong>${safeName}</strong>,`: 'Hello,'}
         </p>
         <p style="font-size: 13px; color: #94a3b8;">
-          Your 6-digit verification code for CodeForge <strong>${purposeDescription}</strong> is:
+          Your 6-digit verification code for CodeRev <strong>${purposeDescription}</strong> is:
         </p>
         <div style="font-size: 36px; font-weight: 900; letter-spacing: 8px; color: #38bdf8; margin: 20px 0; padding: 12px; background-color: #020817; border-radius: 8px; border: 1px dashed #0284c7;">
           ${code}
@@ -93,7 +93,7 @@ export async function sendVerificationEmail(
 
       <div style="text-align: center; border-top: 1px solid #1e293b; padding-top: 16px;">
         <p style="font-size: 11px; color: #475569; margin: 0;">
-          CodeForge Team
+          CodeRev Team
         </p>
       </div>
     </div>
@@ -121,7 +121,7 @@ export async function sendVerificationEmail(
           to: [email],
           subject,
           html: htmlContent,
-          text: `Your CodeForge ${purposeDescription} verification code is ${code}. This code expires in 10 minutes.`,
+          text: `Your CodeRev ${purposeDescription} verification code is ${code}. This code expires in 10 minutes.`,
         }),
       });
 

@@ -32,7 +32,7 @@ const EMPTY_STATS: RevisionDeckStats = {
 };
 
 function formatDate(value?: string) {
-  if (!value) return 'CodeForge learner';
+  if (!value) return 'CodeRev learner';
   return `Joined ${new Intl.DateTimeFormat(undefined, { month: 'short', year: 'numeric' }).format(new Date(value))}`;
 }
 
@@ -105,7 +105,7 @@ export default function MobileProfilePage() {
             <BookOpenCheck className="h-5 w-5" />
           </Link>
           <div className="min-w-0 flex-1 text-center">
-            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-amber-300">CodeForge App</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-amber-300">CodeRev App</p>
             <h1 className="truncate text-lg font-black text-white">Profile</h1>
           </div>
           <button

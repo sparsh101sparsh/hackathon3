@@ -157,7 +157,7 @@ export default function RegisterPage() {
             </h1>
             <p className="text-xs sm:text-sm text-slate-400">
               {step === 1
-                ? 'Join CodeForge to track your DSA mastery & interview preparation'
+                ? 'Join CodeRev to track your DSA mastery & interview preparation'
                 : `Enter the 6-digit code sent to ${email}`}
             </p>
           </div>

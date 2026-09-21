@@ -69,7 +69,7 @@ export default function ContestsPage() {
               <Trophy className="w-6 h-6" />
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              CodeForge Contests & Friend Battles
+              CodeRev Contests & Friend Battles
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-slate-400 mt-1">

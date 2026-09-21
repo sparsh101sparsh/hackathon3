@@ -236,7 +236,7 @@ export default function AdminDashboardPage() {
             <h1 className="text-2xl font-extrabold text-white tracking-tight">Admin Control Panel</h1>
           </div>
           <p className="text-xs text-slate-400">
-            Manage system statistics, problem bank, and user permissions across CodeForge
+            Manage system statistics, problem bank, and user permissions across CodeRev
           </p>
         </div>
 

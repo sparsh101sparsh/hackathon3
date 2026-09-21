@@ -1,5 +1,5 @@
 /**
- * CodeForge Sandbox Invariants & Adversarial Jailbreak Prevention Test Suite.
+ * CodeRev Sandbox Invariants & Adversarial Jailbreak Prevention Test Suite.
  * Asserts that untrusted code execution containers enforce CPU timeouts,
  * memory ceilings (cgroups), fork bomb suppression, and filesystem isolation.
  */
@@ -60,7 +60,7 @@ assertInvariant(
 
 // Summary & Audit Output
 console.log("\n=======================================================");
-console.log("⚡ CodeForge Ephemeral Sandbox Security Invariants Audit");
+console.log("⚡ CodeRev Ephemeral Sandbox Security Invariants Audit");
 console.log("=======================================================\n");
 
 let allPassed = true;

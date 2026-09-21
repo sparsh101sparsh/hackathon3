@@ -1,9 +1,9 @@
-# ⚡ CodeForge: Real-Time Competitive Programming & Algorithmic Arena
+# ⚡ CodeRev: Real-Time Competitive Programming & Algorithmic Arena
 
 > **Enterprise-Grade Distributed Competitive Coding Platform, Sandboxed Multi-Language Execution Engine, and Real-Time 1v1 Battle Arena.**  
 > *Engineered for high-concurrency algorithmic duels, AST-driven data structure visualization, and secure isolated code execution.*
 
-[![Build Status](https://img.shields.io/badge/Build-Passing-emerald?style=for-the-badge&logo=github-actions)](https://github.com/sparsh101sparsh/hackathon3)
+[![Build Status](https://img.shields.io/badge/Build-Passing-emerald?style=for-the-badge&logo=github-actions)](https://github.com/sparsh101sparsh/CodeRev)
 [![Test Suite](https://img.shields.io/badge/Tests-48%2F48%20Passing%20(100%25)-brightgreen?style=for-the-badge&logo=jest)](tests/)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2%20App%20Router-black?style=for-the-badge&logo=next.js&logoColor=white)](https://hackathon2-olive-eight.vercel.app)
 [![Monaco Editor](https://img.shields.io/badge/Monaco-VS%20Code%20Core-blue?style=for-the-badge&logo=visual-studio-code)](https://github.com/microsoft/monaco-editor)
@@ -40,7 +40,7 @@
 
 ## 📌 Executive Overview
 
-**CodeForge** is a production-grade, distributed competitive programming platform built to bridge the gap between static code assessment and high-pressure competitive algorithmic problem-solving. It offers sub-millisecond editor responsiveness, multi-tier isolation for arbitrary user-submitted code, live step-by-step memory visualization, and synchronized multiplayer 1v1 duel arenas.
+**CodeRev** is a production-grade, distributed competitive programming platform built to bridge the gap between static code assessment and high-pressure competitive algorithmic problem-solving. It offers sub-millisecond editor responsiveness, multi-tier isolation for arbitrary user-submitted code, live step-by-step memory visualization, and synchronized multiplayer 1v1 duel arenas.
 
 ### Target Problem Domains
 - **Slow & Fragile Remote Judges**: Conventional code assessment portals suffer from queue starvation, uncontained fork bombs, high spin-up latency, and opaque runtime error feedback.
@@ -57,7 +57,7 @@
 
 ## 🏗️ System Architecture
 
-CodeForge utilizes an event-driven microservices architecture that decouples user workspace interactions, WebSocket state broadcasting, task scheduling, containerized code execution, and persistent telemetry.
+CodeRev utilizes an event-driven microservices architecture that decouples user workspace interactions, WebSocket state broadcasting, task scheduling, containerized code execution, and persistent telemetry.
 
 ```mermaid
 graph TD
@@ -159,7 +159,7 @@ cgroups v2 + nsjail / Docker"]
 ## 🔬 Core Subsystems Deep Dive
 
 ### 1. Ephemeral Sandboxed Remote Code Execution Engine
-Arbitrary code execution presents severe vulnerability vectors: infinite loops, fork bombs, memory starvation, and host-privilege escalation. CodeForge enforces a defense-in-depth isolation harness:
+Arbitrary code execution presents severe vulnerability vectors: infinite loops, fork bombs, memory starvation, and host-privilege escalation. CodeRev enforces a defense-in-depth isolation harness:
 
 - **Linux cgroups v2 Constraints**:
   - `cpu.max`: Restricts process CPU consumption to exactly 1.0 core (100,000 / 100,000 µs).
@@ -366,7 +366,7 @@ curl -X POST https://hackathon2-olive-eight.vercel.app/api/v1/judge/submit   -H 
 
 ## 💻 Frontend Architecture & Monaco Editor Integration
 
-The CodeForge client is crafted using Next.js 14 App Router, maintaining maximum frames and sub-16ms render intervals:
+The CodeRev client is crafted using Next.js 14 App Router, maintaining maximum frames and sub-16ms render intervals:
 
 - **Monaco Editor Optimization**:
   - Lazy-loaded editor chunking to maintain sub-500ms First Contentful Paint (FCP).
@@ -384,7 +384,7 @@ The CodeForge client is crafted using Next.js 14 App Router, maintaining maximum
 ## 📂 Project Directory Structure
 
 ```
-hackathon3/
+CodeRev/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml                    # Automated Jest and ESLint verification
@@ -447,8 +447,8 @@ hackathon3/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/sparsh101sparsh/hackathon3.git
-   cd hackathon3
+   git clone https://github.com/sparsh101sparsh/CodeRev.git
+   cd CodeRev
    ```
 
 2. **Install Dependencies**:
@@ -502,7 +502,7 @@ hackathon3/
 
 ## 🧪 Testing & QA Audit (48/48 Passing)
 
-CodeForge maintains a 100% pass rate across unit, integration, and security test suites:
+CodeRev maintains a 100% pass rate across unit, integration, and security test suites:
 
 ```bash
 # Run complete test suite with coverage report
@@ -554,5 +554,5 @@ npm run test:coverage
 
 - **Lead Architect & Developer**: `sparsh101sparsh <iamsparshemail02@gmail.com>`
 - **Live Platform**: [https://hackathon2-olive-eight.vercel.app](https://hackathon2-olive-eight.vercel.app)
-- **Repository**: [https://github.com/sparsh101sparsh/hackathon3](https://github.com/sparsh101sparsh/hackathon3)
+- **Repository**: [https://github.com/sparsh101sparsh/CodeRev](https://github.com/sparsh101sparsh/CodeRev)
 - **License**: Licensed under the [MIT License](LICENSE).

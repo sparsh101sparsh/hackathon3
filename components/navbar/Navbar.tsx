@@ -93,12 +93,12 @@ export const Navbar: React.FC = () => {
       {/* Left Brand Emblem & Nav Links */}
       <div className="flex min-w-0 items-center gap-4">
         {/* Glowing Logo Emblem */}
-        <Link href="/" className="liquid-brand group flex items-center gap-2 text-white" aria-label="CodeForge home">
+        <Link href="/" className="liquid-brand group flex items-center gap-2 text-white" aria-label="CodeRev home">
           <div className="liquid-brand-mark">
             <Code2 className="w-4 h-4" aria-hidden="true" />
           </div>
           <span className="text-[15px] font-medium leading-none">
-            CodeForge<span className="liquid-brand-caret">_</span>
+            CodeRev<span className="liquid-brand-caret">_</span>
           </span>
         </Link>
 

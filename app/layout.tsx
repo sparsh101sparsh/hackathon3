@@ -14,12 +14,12 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-  title: 'CodeForge — DSA & Competitive Programming',
+  title: 'CodeRev — DSA & Competitive Programming',
   description:
     'Practice DSA, execute code in 5 languages, get guided code reviews and hints, compete in rated contests, and prepare for technical interviews — all in one platform.',
   keywords: ['DSA', 'competitive programming', 'coding practice', 'code review', 'interview prep', 'LeetCode alternative'],
   openGraph: {
-    title: 'CodeForge',
+    title: 'CodeRev',
     description: 'DSA and competitive programming platform',
     type: 'website',
   },

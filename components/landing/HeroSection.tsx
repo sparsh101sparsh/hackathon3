@@ -68,7 +68,7 @@ export const HeroSection: React.FC = () => {
       >
         Master Coding & Crack Tech Interviews with{' '}
         <span className="text-amber-100 underline decoration-amber-300/25 underline-offset-8">
-          CodeForge
+          CodeRev
         </span>
       </motion.h1>
 

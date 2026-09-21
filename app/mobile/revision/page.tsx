@@ -179,7 +179,7 @@ export default function MobileRevisionPage() {
             <User className="h-5 w-5" />
           </Link>
           <div className="min-w-0 flex-1 text-center">
-            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-amber-300">CodeForge</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-amber-300">CodeRev</p>
             <h1 className="truncate text-lg font-black text-white">Revision Deck</h1>
           </div>
           <button
@@ -326,7 +326,7 @@ export default function MobileRevisionPage() {
             <p className="mt-3 max-w-xs text-sm leading-6 text-slate-400">
               {cards.length > 0
                 ? 'Your due cards are done. Come back when the next scheduled card unlocks.'
-                : 'Solve problems and submit attempts on CodeForge to build your personal deck.'}
+                : 'Solve problems and submit attempts on CodeRev to build your personal deck.'}
             </p>
             <div className="mt-6 flex w-full flex-col gap-3">
               <Link

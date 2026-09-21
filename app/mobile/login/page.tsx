@@ -158,7 +158,7 @@ export default function MobileLoginPage() {
           <div className="grid h-14 w-14 place-items-center rounded-2xl border border-amber-300/20 bg-amber-300/10 text-amber-300">
             <ShieldCheck className="h-7 w-7" />
           </div>
-          <p className="mt-6 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">CodeForge App</p>
+          <p className="mt-6 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">CodeRev App</p>
           <h1 className="mt-2 text-3xl font-black leading-tight text-white">Sign in to revise</h1>
           <p className="mt-3 text-sm leading-6 text-slate-400">
             This app only opens your profile and revision deck. No desktop website navigation.

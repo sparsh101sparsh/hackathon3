@@ -190,7 +190,7 @@ export async function loadProblems(): Promise<ProblemSeedItem[]> {
 }
 
 export async function seedRealProblems() {
-  console.log('🌱 Starting CodeForge Real Problems Seeder (600+ Problems)...');
+  console.log('🌱 Starting CodeRev Real Problems Seeder (600+ Problems)...');
   const startTime = Date.now();
 
   const problemsToSeed = await loadProblems();
@@ -387,7 +387,7 @@ export async function seedRealProblems() {
 
   const contest = await prisma.contest.create({
     data: {
-      title: 'CodeForge Weekly Contest 1',
+      title: 'CodeRev Weekly Contest 1',
       description: 'Test your speed and problem-solving skills in our inaugural rated contest!',
       startTime: contestStartTime,
       endTime: contestEndTime,

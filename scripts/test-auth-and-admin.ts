@@ -9,7 +9,7 @@ import { hashPassword, signToken } from '../lib/auth';
 
 async function runTests() {
   console.log('====================================================');
-  console.log('   CodeForge - Authenticated Admin Verification Suite');
+  console.log('   CodeRev - Authenticated Admin Verification Suite');
   console.log('====================================================\n');
 
   let passed = 0;

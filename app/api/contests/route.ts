@@ -43,7 +43,7 @@ export async function GET(req: NextRequest) {
       await prisma.contest.createMany({
         data: [
           {
-            title: 'CodeForge Live Weekly 42',
+            title: 'CodeRev Live Weekly 42',
             description: 'Compete live with top global algorithms engineers! Solve 4 DSA problems with points 100, 250, 500, 1000.',
             startTime: activeStart,
             endTime: activeEnd,
@@ -51,7 +51,7 @@ export async function GET(req: NextRequest) {
             status: 'ACTIVE',
           },
           {
-            title: 'CodeForge Grand Master Challenge 15',
+            title: 'CodeRev Grand Master Challenge 15',
             description: 'Rated contest designed for intermediate to advance competitive programmers.',
             startTime: upcomingStart,
             endTime: upcomingEnd,
@@ -59,7 +59,7 @@ export async function GET(req: NextRequest) {
             status: 'UPCOMING',
           },
           {
-            title: 'CodeForge Spring Championship 2026',
+            title: 'CodeRev Spring Championship 2026',
             description: 'Completed rated contest. Review problem set and editorial solutions.',
             startTime: pastStart,
             endTime: pastEnd,
